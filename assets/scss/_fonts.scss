@@ -3,7 +3,7 @@
     font-family: $name;
     font-style: $style;
     font-weight: $weight;
-    src: url($url-woff) format("woff"), url($url-woff2) format(woff2);
+    src: url($url-woff) format("woff"), url($url-woff2) format("woff2");
   }  
 }
 

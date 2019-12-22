@@ -2,5 +2,40 @@
 @import "fonts";
 @import "libs";
 
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #bbbbbb;
+}
+
+header {
+  .top-line {
+    position: fixed;
+    width: 100%;
+    padding-top: 16px;
+
+    .logo-wrapper {
+      position: relative; 
+    }
+
+    .logo-image {
+      position: absolute;      
+      top: 50%;
+      margin-top: -16px;
+      height: 30px;    
+    }
+
+    .logo-text {
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 28px;
+      line-height: 28px;
+      margin-left: 40px;
+    }
+
+    .logo-text-bold {
+      font-weight: 800;
+    }    
+  }
+}
 
 @import "media";
