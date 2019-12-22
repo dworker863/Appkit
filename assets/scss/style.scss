@@ -13,15 +13,12 @@ header {
     width: 100%;
     padding-top: 16px;
 
-    .logo-wrapper {
-      position: relative; 
+    .logo-image-wrapper {
+      display: inline-block;
     }
 
     .logo-image {
-      position: absolute;      
-      top: 50%;
-      margin-top: -16px;
-      height: 30px;    
+      height: 30px;
     }
 
     .logo-text {
@@ -29,12 +26,45 @@ header {
       color: #ffffff;
       font-size: 28px;
       line-height: 28px;
-      margin-left: 40px;
+      vertical-align: top;
+      margin-left: 6px;
     }
 
     .logo-text-bold {
       font-weight: 800;
-    }    
+    }
+    
+    .hamburger-wrapper {
+      position: absolute;
+      padding: 17px 11px;
+      background-color: #26282c;
+      border-radius: 4px;
+      top: -6px;
+      right: 10px;
+    
+      .hamburger {
+        position: relative;
+        background-color: #ffffff;
+        height: 3px;
+        width: 22px;
+    
+        &::before, &::after {
+          content: "";
+          position: absolute;
+          background-color: #ffffff;
+          height: 3px;
+          width: 100%;        
+        }
+    
+        &::before {
+          top: 7px;
+        }
+    
+        &::after {
+          bottom: 7px;
+        }
+      }
+    }
   }
 }
 
