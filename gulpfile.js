@@ -20,9 +20,10 @@ function styles() {
 }
 
 function scripts() {
-  return gulp.src("./assets/js/common.js")
+  return gulp.src([
+    "node_modules/jquery/dist/jquery.min.js",
+    "./assets/js/common.js"])
   .pipe(sourcemaps.init())
-  .pipe(sass())
   .pipe(concat("scripts.min.css"))
   .pipe(uglify())
   .pipe(sourcemaps.write())
