@@ -66,6 +66,38 @@ header {
       }
     }
   }
+
+  .top-line.fixed {
+    background-color: #ffffff;
+
+    .logo-wrapper {
+      position: relative;
+      top: -3px;
+      line-height: 20px;
+    }
+
+    .logo-image-wrapper {
+      position: relative;
+      bottom: 4px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+    }
+
+    .logo-image {
+      position: absolute;
+      height: 20px;
+      top: 50%;
+      margin-top: -10px;
+      left: 50%;
+      margin-left: -10px;
+    }
+
+    .logo-text {
+      color: $text-color;
+    }
+  }
 }
 
 @import "media";
