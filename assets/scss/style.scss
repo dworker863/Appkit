@@ -7,6 +7,12 @@ a, a:hover {
   color: #ffffff;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #bbbbbb;
@@ -21,6 +27,7 @@ header {
     top: 0;
     width: 100%;
     padding-top: 16px;
+    z-index: 2;
 
     .logo-image-wrapper {
       display: inline-block;
@@ -105,6 +112,38 @@ header {
 
     .logo-text {
       color: $text-color;
+    }
+  }
+
+  .top-menu {
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    background-color: #26282c;
+    padding: 7px 0;
+    z-index: 2;
+
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(#ffffff, .65);
+    }
+
+    li {
+      padding: 8px 0 ;
+
+      &:hover {
+        cursor: pointer;
+
+        a {
+          color: $color-primary;
+        }
+      }        
+    }
+
+    .item-active a{
+      color: $color-primary;
     }
   }
 
