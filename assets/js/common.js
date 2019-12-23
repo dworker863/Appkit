@@ -23,6 +23,15 @@ $(document).ready(function() {
     }
   });
 
+  $(".hamburger-wrapper").click(function() {
+    $(".top-menu").slideToggle(300);
+  });
+
+  $(".top-menu li").click(function() {
+    $(".item-active").removeClass("item-active");
+    $(this).addClass("item-active");
+  });
+
   $(".indicator").click(function(event) {
     event.preventDefault();
     $(".active").removeClass("active");
