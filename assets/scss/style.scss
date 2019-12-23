@@ -116,14 +116,33 @@ header {
 
     .slide {
       position: absolute;
+      width: 100%;
       z-index: -1;
       height: 100%;
       color: #ffffff;
       padding-top: 100px;
+      opacity: 0;
+      transition: opacity .7s;
+    }
+
+    .slide-active {
+      opacity: 1;
     }
 
     #bg1 {
       background-image: url("../images/hero-1.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #bg2 {
+      background-image: url("../images/hero-2.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #bg3 {
+      background-image: url("../images/hero-3.jpg");
       background-size: cover;
       background-position: center;
     }
@@ -163,6 +182,7 @@ header {
       height: 11px;
       background-color: rgba(#ffffff, .65);
       margin-right: 4px;
+      transition: background-color .5s;
     }
 
     .indicator.active {
