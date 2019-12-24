@@ -15,6 +15,18 @@ $(document).ready(function() {
     
   }, 5000);
 
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    $(".container").removeClass("container-my");
+  }
+
+  $(window).resize(function() {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+      $(".container").removeClass("container-my");
+    } else {
+      $(".container").addClass("container-my");
+    }
+  });  
+
   $(window).scroll(function() {
     if ($(window).scrollTop() > 0) {
       $(".top-line").addClass("fixed");

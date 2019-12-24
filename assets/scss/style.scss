@@ -13,6 +13,10 @@ ul, li {
   list-style-type: none;
 }
 
+.container-my {
+  max-width: 750px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #bbbbbb;
@@ -221,17 +225,13 @@ header {
       width: 11px;
       height: 11px;
       background-color: rgba(#ffffff, .65);
-      margin-right: 4px;
+      margin-right: 4.5px;
       transition: background-color .5s;
     }
 
     .indicator.active {
       background-color: $color-primary;
     }
-  }
-
-  .header-image-wrapper {    
-    margin-left: 15px;    
   }
 
   .header-image {

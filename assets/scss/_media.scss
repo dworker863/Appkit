@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+
+.container-my {
+  position: relative;
+}
+
+  header {
+    min-height: 560px;
+    padding-top: 130px;
+
+    .top-line {
+      .hamburger-wrapper {
+        display: none;
+      }
+    }
+
+    .slider {
+
+      .slide {
+        padding-top: 120px;
+      }
+
+      .h2 {
+        font-size: 30px;
+      }
+
+      .indicators-wrapper {
+        bottom: 20px;
+      }
+    }
+
+    .header-image-wrapper {
+      position: absolute;
+      right: 0;
+    }
+
+    .header-image {
+      max-width: 400px;
+    }
+  }  
+}
