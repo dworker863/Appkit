@@ -85,6 +85,40 @@ header {
         }
       }
     }
+
+    .top-menu {
+      display: none;
+      position: fixed;
+      width: 100%;
+      top: 60px;
+      text-align: center;
+      background-color: #26282c;
+      padding: 7px 0;
+      z-index: 2;
+  
+      a {
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(#ffffff, .65);
+        -webkit-font-smoothing: antialiased;
+      }
+  
+      li {
+        padding: 8px 0 ;
+  
+        &:hover {
+          cursor: pointer;
+  
+          a {
+            color: $color-primary;
+          }
+        }        
+      }
+  
+      .item-active a{
+        color: $color-primary;
+      }
+    }
   }
 
   .top-line.fixed {
@@ -116,39 +150,6 @@ header {
 
     .logo-text {
       color: $text-color;
-    }
-  }
-
-  .top-menu {
-    display: none;
-    position: fixed;
-    width: 100%;
-    top: 60px;
-    text-align: center;
-    background-color: #26282c;
-    padding: 7px 0;
-    z-index: 2;
-
-    a {
-      font-size: 14px;
-      font-weight: 700;
-      color: rgba(#ffffff, .65);
-    }
-
-    li {
-      padding: 8px 0 ;
-
-      &:hover {
-        cursor: pointer;
-
-        a {
-          color: $color-primary;
-        }
-      }        
-    }
-
-    .item-active a{
-      color: $color-primary;
     }
   }
 

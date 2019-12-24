@@ -12,7 +12,56 @@
       .hamburger-wrapper {
         display: none;
       }
+
+      .top-menu {
+        display: block;
+        width: auto;
+        background-color: transparent;
+        top: 5px;
+        margin-left: 14px;
+
+        li {
+          display: inline-block;
+          padding: 7px 5px 13px 5px;
+          margin-right: 21px;
+
+          &:hover {
+    
+            a {
+              color: #ffffff;
+            }
+          } 
+        }
+        
+        .item-active a {
+            color: #ffffff;
+        }
+      }
     }
+
+    .top-line.fixed {
+
+      .top-menu {
+
+        li {
+          &:hover a {
+            color: $text-color;
+          }
+        }
+
+        a {
+          color: #a2a6af;
+        }
+
+        .item-active {
+          border-bottom: 4px solid $color-primary;
+
+          a {
+            color: $text-color;
+          }
+        }
+      }
+    }   
 
     .slider {
 
