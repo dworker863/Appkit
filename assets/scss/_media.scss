@@ -1,8 +1,8 @@
 @media (min-width: 768px) {
 
-.container-my {
-  position: relative;
-}
+  .container-my {
+    position: relative;
+  }
 
   header {
     min-height: 560px;
@@ -40,7 +40,6 @@
     }
 
     .top-line.fixed {
-
       .top-menu {
 
         li {
@@ -64,17 +63,12 @@
     }   
 
     .slider {
-
       .slide {
         padding-top: 120px;
       }
 
       .h2 {
         font-size: 30px;
-      }
-
-      .indicators-wrapper {
-        bottom: 20px;
       }
     }
 
@@ -87,4 +81,40 @@
       max-width: 400px;
     }
   }  
+}
+
+@media (min-width: 992px) {
+
+  .container-my {
+    max-width: 970px;
+  }
+
+  header {
+    .header-image {
+      max-width: 420px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .container-my {
+    max-width: 1170px;
+  }
+
+  header {
+    padding-top: 118px;
+
+    .header-image {
+      max-width: 570px;
+    }
+
+    .top-line {
+      .top-menu {
+        margin-left: 35px;
+      }
+    }
+  }
+
 }

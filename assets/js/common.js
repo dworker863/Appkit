@@ -15,10 +15,6 @@ $(document).ready(function() {
     
   }, 5000);
 
-  if (window.matchMedia("(min-width: 992px)").matches) {
-    $(".container").removeClass("container-my");
-  }
-
   if (window.matchMedia("(min-width: 768px)").matches) {
     $(".top-menu").appendTo(".top-line .col-md-9");
   } else {
@@ -30,12 +26,6 @@ $(document).ready(function() {
       $(".top-menu").appendTo(".top-line .col-md-9").css("display", "block");
     } else {
       $(".top-menu").appendTo(".top-line").css("display", "none");
-    }
-
-    if (window.matchMedia("(min-width: 992px)").matches) {
-      $(".container").removeClass("container-my");
-    } else {
-      $(".container").addClass("container-my");
     }
   });  
 
