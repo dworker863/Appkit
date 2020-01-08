@@ -262,7 +262,18 @@ header {
     text-align: center;
     color: #a2a6af;
     margin-bottom: 50px;
-  }  
+  }
+
+  .technologies {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 10px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 @import "media";
