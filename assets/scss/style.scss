@@ -138,6 +138,7 @@ header {
 
   .top-line.fixed {
     background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
 
     .logo-wrapper {
       position: relative;
@@ -266,12 +267,44 @@ header {
 
   .technologies {
     text-align: center;
+    margin-bottom: 120px;
 
     li {
       display: inline-block;
       list-style-type: none;
       margin: 0 10px;
       margin-bottom: 15px;
+    }
+  }
+
+  .advantages {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .advantages-item {
+      margin-bottom: 60px;
+
+      .about-image-wrapper {
+        margin-bottom: 22px;
+      }
+  
+      .advantages-h3 {
+        padding-right: 25px;
+        padding-left: 25px;
+        text-transform: capitalize;
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+  
+      .advantages-desc {
+        padding-right: 25px;
+        padding-left: 25px;
+        color: $text-color-secondary;
+        font-size: 14px;
+        line-height: 1.45;
+      }
     }
   }
 }
