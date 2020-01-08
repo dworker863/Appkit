@@ -13,6 +13,20 @@ ul, li {
   list-style-type: none;
 }
 
+section {
+  padding-top: 89px;
+  padding-bottom: 89px;
+}
+
+.section-h2 {
+  text-transform: capitalize;
+  color: $text-color;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 13px;
+}
+
 .container-my {
   max-width: 750px;
 }
@@ -25,6 +39,7 @@ body {
 header {
   position: relative;
   padding-top: 412px;
+  overflow: hidden;
   
   .top-line {
     position: fixed;
@@ -192,14 +207,14 @@ header {
       background-position: center;
     }
 
-    .h2 {
+    .slider-h2 {
       font-weight: 700;
       font-size: 26px;
       line-height: 1.4;
       margin-bottom: 15px;
     }
 
-    .intro {
+    .slider-intro {
       font-size: 18px;
       margin-bottom: 30px;
     }
@@ -238,6 +253,16 @@ header {
   .header-image {
     max-width: 320px;
   }
+}
+
+.about {
+  background-color: #ffffff;
+
+  .about-intro {
+    text-align: center;
+    color: #a2a6af;
+    margin-bottom: 50px;
+  }  
 }
 
 @import "media";
