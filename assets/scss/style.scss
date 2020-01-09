@@ -282,6 +282,8 @@ header {
     margin-bottom: 40px;
 
     .advantages-item {
+      padding-right: 25px;
+      padding-left: 25px;
       margin-bottom: 60px;
 
       .about-image-wrapper {
@@ -289,8 +291,7 @@ header {
       }
   
       .advantages-h3 {
-        padding-right: 25px;
-        padding-left: 25px;
+        
         text-transform: capitalize;
         color: $color-primary;
         font-weight: 700;
@@ -299,12 +300,59 @@ header {
       }
   
       .advantages-desc {
-        padding-right: 25px;
-        padding-left: 25px;
         color: $text-color-secondary;
         font-size: 14px;
         line-height: 1.45;
       }
+    }
+  }
+}
+
+.reviews {
+  background-color: $color-primary;
+  background-image: url("../images/map.png");  
+  background-size: cover;
+  background-position: center;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  .section-h2 {
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 60px;
+  }
+
+  .review {
+    position: relative;
+
+    .reviews-image-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: auto;
+  
+      img {
+        height: 60px;
+      }
+    }
+  
+    .triangle {
+      position: absolute;
+      top: 30px;
+      left: 65px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-right: 10px solid rgba(0, 0, 0, .2);
+    }
+    .comment {
+      display: inline-block;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, .2);    
+      padding: 15px;
+      margin-left: 85px;
+      border-radius: 4px;    
     }
   }
 }
