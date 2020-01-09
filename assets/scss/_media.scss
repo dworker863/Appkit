@@ -1,12 +1,12 @@
 @media (min-width: 768px) {
 
-  .container-my {
-    position: relative;
-  }
-
   header {
     min-height: 560px;
     padding-top: 130px;
+
+    .container-my {
+      position: relative;
+    }
 
     .top-line {
       .hamburger-wrapper {
@@ -80,47 +80,92 @@
     .header-image {
       max-width: 400px;
     }
-  }  
-}
-
-.about {
-  .advantages {
-    .advantages-item.item-second {
-      .about-image-wrapper {
-        margin-bottom: 35px;
+  }
+  
+  .about {
+    .advantages {
+      .advantages-item.item-second {
+        .about-image-wrapper {
+          margin-bottom: 35px;
+        }
+      }
+  
+      .advantages-item.item-third {
+        .about-image-wrapper {
+          margin-bottom: 48px;
+        }
+      }
+    }  
+  }
+  
+  .reviews {
+    .container-my {
+      max-width: 690px;
+    }
+  
+    .review {
+      .comment {
+        padding: 30px;
+      }
+  
+      .reviews-image-wrapper {
+        img {
+          height: 80px;
+        }
       }
     }
-
-    .advantages-item.item-third {
-      .about-image-wrapper {
-        margin-bottom: 48px;
+    
+    .review-left {
+      .triangle {
+        left: 85px;
+      }
+  
+      .comment {
+        margin-left: 105px;
       }
     }
-  }  
+  
+    .review-right {
+      .triangle {
+        right: 85px;
+        border-left: 10px solid rgba(0, 0, 0, .2);
+      }
+  
+      .comment {
+        margin-right: 105px;
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
 
-  .container-my {
-    max-width: 970px;
-  }
-
   header {
+    .container-my {
+      max-width: 970px;
+    }
+
     .header-image {
       max-width: 420px;
     }
   }
 
+  .reviews {
+    .container-my {
+      max-width: 770px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
 
-  .container-my {
-    max-width: 1170px;
-  }
-
   header {
     padding-top: 118px;
+
+    .container-my {
+      max-width: 1170px;
+    }
 
     .header-image {
       max-width: 570px;
