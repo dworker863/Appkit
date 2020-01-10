@@ -412,6 +412,7 @@ header {
 
 .features {
   background-color: #ffffff;
+  padding-bottom: 90px;
 
   li {
     margin: 14px 0;
@@ -428,6 +429,19 @@ header {
   a {
     font-size: 14px;
     color: $text-color-secondary;
+  }
+
+  .features-slider {
+    position: relative;
+    height: 250px;
+
+    .features-slider-item {
+      position: absolute;
+    }
+
+    img {
+      height: 250px;
+    }
   }
 }
 
