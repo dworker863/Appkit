@@ -27,6 +27,12 @@ section {
   margin-bottom: 13px;
 }
 
+.section-intro {
+  text-align: center;
+  color: #a2a6af;
+  margin-bottom: 50px;
+}
+
 .container-my {
   max-width: 750px;
 }
@@ -259,12 +265,6 @@ header {
 .about {
   background-color: #ffffff;
 
-  .about-intro {
-    text-align: center;
-    color: #a2a6af;
-    margin-bottom: 50px;
-  }
-
   .technologies {
     text-align: center;
     margin-bottom: 120px;
@@ -393,6 +393,10 @@ header {
       margin-left: auto;
     }
   }
+}
+
+.features {
+  background-color: #ffffff;
 }
 
 @import "media";
