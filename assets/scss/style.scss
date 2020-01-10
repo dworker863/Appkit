@@ -15,7 +15,7 @@ ul, li {
 
 section {
   padding-top: 89px;
-  padding-bottom: 89px;
+  padding-bottom: 35px;
 }
 
 .section-h2 {
@@ -40,6 +40,14 @@ section {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #bbbbbb;
+
+  .item-active a{
+    color: $color-primary;
+  }
+
+  .item-active i{
+    color: $color-primary;
+  }
 }
 
 header {
@@ -134,10 +142,6 @@ header {
             color: $color-primary;
           }
         }        
-      }
-  
-      .item-active a{
-        color: $color-primary;
       }
     }
   }
@@ -304,7 +308,13 @@ header {
         line-height: 1.45;
       }
     }
+
+    .col-12:last-child .advantages-item {
+      margin-bottom: 0;
+    }
   }
+
+  
 }
 
 .reviews {
@@ -314,6 +324,7 @@ header {
   background-position: center;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 105px;
 
   .section-h2 {
     color: #ffffff;
@@ -393,10 +404,31 @@ header {
       margin-left: auto;
     }
   }
+
+  .col-12:last-child .review {
+    margin-bottom: 0;
+  }
 }
 
 .features {
   background-color: #ffffff;
+
+  li {
+    margin: 14px 0;
+    text-align: center;
+  }
+
+  i {
+    font-size: 14px;
+    color: $text-color-secondary;
+    font-weight: 900;
+    margin-right: 8px;
+  }
+
+  a {
+    font-size: 14px;
+    color: $text-color-secondary;
+  }
 }
 
 @import "media";
