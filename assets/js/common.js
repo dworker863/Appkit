@@ -55,4 +55,11 @@ $(document).ready(function() {
     $($(this).attr("href")).addClass("slide-active");
   })
 
+  $(".options li").click(function(event) {
+    event.preventDefault();
+    $(".item-active").removeClass("item-active");
+    $(this).addClass("item-active");
+    $(".features-item-active").removeClass("features-item-active");
+    $($(this).children("a").attr("href")).addClass("features-item-active");
+  })
 });
