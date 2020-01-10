@@ -434,10 +434,10 @@ header {
 
   .features-slider {
     position: relative;
-    height: 250px;
-
+    
     .features-slider-item {
       position: absolute;
+      z-index: -1;
       width: 100%;
       text-align: center;
       opacity: 0;
@@ -445,11 +445,13 @@ header {
     }
 
     .features-item-active {
+      position: relative;
       opacity: 1;
+      z-index: 1;
     }
 
     img {
-      height: 250px;
+      width: 100%;
     }
   }
 }
