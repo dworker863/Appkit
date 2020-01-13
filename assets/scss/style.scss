@@ -472,6 +472,84 @@ header {
     font-size: 14px;
     text-align: center;
     color: $text-color;
+    margin-bottom: 60px;
+  }
+
+  .person {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+
+    .person-image-wrapper {
+      margin-bottom: 20px;
+    }
+
+    img {
+      height: 120px;
+    }
+
+    .name {
+      color: $color-primary;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .position {
+      display: inline-block;
+      text-transform: capitalize;
+      color: $text-color;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      margin-bottom: 50px;
+
+      li {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      i {
+        padding: 8px;
+        border-radius: 50%;        
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .twitter i {
+        background-color: $twitter;
+      }
+
+      .facebook i {
+        padding: 7.5px 11.5px;
+        font-size: 18px;
+        background-color: $facebook;
+      }
+
+      .github i {
+        background-color: $github;
+      }
+
+      .dribbble i {
+        background-color: $dribbble;
+      }
+
+      .linkedin i {
+        padding: 8px 9px;
+        background-color: $linkedin;
+      }
+    }
+
+    .person-about {
+      padding: 0 22px;
+      font-size: 14px;
+      color: $text-color;
+
+      a {
+        color: $color-primary;
+      }
+    }
   }
 }
 
