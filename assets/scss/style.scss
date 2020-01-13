@@ -412,7 +412,7 @@ header {
 
 .features {
   background-color: #ffffff;
-  padding-bottom: 90px;
+  padding-bottom: 77px;
 
   li {
     margin: 14px 0;
@@ -457,6 +457,21 @@ header {
     img {
       width: 100%;
     }
+  }
+}
+
+.team {
+  background-color: #f5f5f5;
+  padding-top: 88px;
+
+  .section-intro {
+    margin-bottom: 60px;
+  }
+
+  .history {
+    font-size: 14px;
+    text-align: center;
+    color: $text-color;
   }
 }
 
