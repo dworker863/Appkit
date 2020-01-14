@@ -465,6 +465,11 @@ header {
   padding-top: 88px;
   padding-bottom: 80px;
 
+  .container-my {
+    max-width: 765px;
+    padding: 0 30px;
+  }
+
   .section-intro {
     margin-bottom: 60px;
   }
@@ -524,12 +529,13 @@ header {
       }
 
       .facebook i {
-        padding: 7.5px 11.5px;
-        font-size: 18px;
+        padding: 8px 11.5px;
+        font-size: 17px;
         background-color: $facebook;
       }
 
       .github i {
+        padding: 8px 9px;
         background-color: $github;
       }
 
