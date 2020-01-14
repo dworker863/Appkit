@@ -17,23 +17,15 @@ $(document).ready(function() {
 
   if (window.matchMedia("(min-width: 768px)").matches) {
     $(".top-menu").appendTo(".top-line .col-md-9");
-    $(".team .container").removeClass("container-my");
-    $(".team .col-md-6").children(".col-12").removeClass("col-12");
   } else {
     $(".top-menu").appendTo(".top-line");
-    $(".team .container").addClass("container-my");
-    $(".team .col-md-6").children("div").addClass("col-12");
   }
 
   $(window).resize(function() {
     if (window.matchMedia("(min-width: 768px)").matches) {
       $(".top-menu").appendTo(".top-line .col-md-9").css("display", "block");
-      $(".team .container").removeClass("container-my");
-      $(".team .col-md-6").children(".col-12").removeClass("col-12");
     } else {
       $(".top-menu").appendTo(".top-line").css("display", "none");
-      $(".team .container").addClass("container-my");
-      $(".team .col-md-6").children("div").addClass("col-12");
     }
   });  
 
