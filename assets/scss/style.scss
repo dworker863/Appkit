@@ -46,6 +46,11 @@ section {
   border-radius: 4px;
 }
 
+.blue-button {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #bbbbbb;
@@ -238,12 +243,7 @@ header {
     .slider-intro {
       font-size: 18px;
       margin-bottom: 30px;
-    }
-
-    .slider-button {
-      background-color: $color-primary;
-      border: 1px solid $color-primary;
-    }
+    }    
 
     .indicators-wrapper {
       position: absolute;
@@ -571,6 +571,7 @@ header {
 
 .prices {
   background-color: #fff;
+  padding-bottom: 92px;
 
   .container-my {
     padding: 0 30px;
@@ -641,6 +642,53 @@ header {
       margin: auto;
       padding: 11px 31px;
     }
+  }
+}
+
+.contacts {
+  background-image: url("../images/map.png");
+  background-position: center;
+  background-color: $text-color;
+  background-origin: padding-box;
+  text-align: center;
+  padding-top: 87px;
+  padding-bottom: 0;
+
+  .section-h2 {
+    color: #ffffff;
+    margin-bottom: 29px;
+  }
+  
+  .section-intro {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .blue-button {
+    text-transform: capitalize;
+    margin-bottom: 90px;
+  }  
+}
+
+footer {
+  padding-top: 17px;
+  background-color: #26282c;
+  border-top: .3px solid  rgba(255, 255, 255, .2);
+
+  .fas {
+    color: $color-pink;
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, .65);
+    font-size: 12px;
+    text-align: center;
+  }
+
+  a {
+    color: $color-primary;
   }
 }
 
