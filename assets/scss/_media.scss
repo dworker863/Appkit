@@ -166,6 +166,29 @@
       height: 100%;
     }
   }
+
+  .prices {
+    .card {
+      .title {
+        margin-bottom: 20px;
+        line-height: 1;
+      }
+
+      &.extended {
+        .title {
+          margin-bottom: 38px;
+        }
+
+        .license {
+          margin-bottom: 33px;
+        }
+      }
+
+      .license {
+        margin-bottom: 75px;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -209,6 +232,28 @@
   .team {
     .container-my {
       max-width: 830px;
+    }
+  }
+
+  .prices {
+    .container-my {
+      max-width: 930px;
+    }
+
+    .card {
+      &.extended {
+        .title {
+          margin-bottom: 42px;   
+        }
+
+        .license {
+          margin-bottom: 75px;
+        }
+      }
+
+      .title {
+        margin-bottom: 42px;   
+      }
     }
   }
 }
