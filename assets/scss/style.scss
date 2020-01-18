@@ -44,6 +44,10 @@ section {
   font-weight: 700;
   padding: 10px 30px;  
   border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .blue-button {
@@ -74,7 +78,11 @@ header {
     top: 0;
     width: 100%;
     padding-top: 16px;
-    z-index: 2;
+    z-index: 10;
+    
+    .logo-wrapper:hover {
+      cursor: pointer;
+    }
 
     .logo-image-wrapper {
       display: inline-block;
@@ -203,7 +211,7 @@ header {
     .slide {
       position: absolute;
       width: 100%;
-      z-index: -1;
+      // z-index: -1;
       height: 100%;
       color: #ffffff;
       padding-top: 100px;
@@ -265,6 +273,11 @@ header {
     .indicator.active {
       background-color: $color-primary;
     }
+  }
+
+  .header-image-wrapper {
+    position: relative;
+    z-index: 5;
   }
 
   .header-image {
@@ -564,6 +577,10 @@ header {
 
       a {
         color: $color-primary;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -689,6 +706,10 @@ footer {
 
   a {
     color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
 
