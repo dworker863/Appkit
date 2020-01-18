@@ -24,7 +24,7 @@ function scripts() {
     "node_modules/jquery/dist/jquery.min.js",
     "./assets/js/common.js"])
   .pipe(sourcemaps.init())
-  .pipe(concat("scripts.min.css"))
+  .pipe(concat("scripts.min.js"))
   .pipe(uglify())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest("assets/js"))

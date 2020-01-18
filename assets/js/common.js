@@ -43,9 +43,13 @@ $(document).ready(function() {
 
   $(".top-menu li").click(function(event) {
     event.preventDefault();
+    let elem = $($(this).children("a").attr("href"));
+
     $(".item-active").removeClass("item-active");
     $(this).addClass("item-active");
+    $("html, body").animate({scrollTop: elem.offset().top}, "slow");
   });
+  
 
   $(".indicator").click(function(event) {
     event.preventDefault();
