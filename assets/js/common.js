@@ -49,6 +49,10 @@ $(document).ready(function() {
     $(this).addClass("item-active");
     $("html, body").animate({scrollTop: elem.offset().top}, "slow");
   });
+
+  $(".logo-wrapper").click(function() {
+    $("html, body").animate({scrollTop: 0}, "slow");
+  })
   
 
   $(".indicator").click(function(event) {
