@@ -48,6 +48,7 @@ $(document).ready(function() {
     $(".item-active").removeClass("item-active");
     $(this).addClass("item-active");
     $("html, body").animate({scrollTop: elem.offset().top}, "slow");
+    $(".top-menu").slideToggle(300);
   });
 
   $(".logo-wrapper").click(function() {
