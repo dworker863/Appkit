@@ -42,4 +42,25 @@ function watch() {
   gulp.watch("assets/scss/**/*.scss", gulp.series(styles));
   gulp.watch("assets/js/common.js", gulp.series(scripts));
 }
+
+function build(done) {
+  gulp.src(["assets/*.html", "assets/*.php"])
+    .pipe(gulp.dest("dist"));
+
+  gulp.src("assets/css/style.css")
+    .pipe(gulp.dest("dist/css"))
+
+  gulp.src("assets/js/scripts.min.js")
+    .pipe(gulp.dest("dist/js"));
+
+  gulp.src("assets/fonts/**")
+    .pipe(gulp.dest("dist/fonts"));
+
+  gulp.src("assets/img/**")
+    .pipe(gulp.dest("dist/img"));
+
+  done();
+}
+
 exports.default = gulp.series(gulp.parallel(styles, scripts), watch);
+exports.build = gulp.series(gulp.parallel(styles, scripts), build);
